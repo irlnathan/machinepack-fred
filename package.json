@@ -1,0 +1,30 @@
+{
+  "name": "machinepack-fred",
+  "version": "0.1.0",
+  "description": "Communicate with the Fred API to get series, releases, observations, etc.",
+  "scripts": {
+    "test": "node ./node_modules/test-machinepack-mocha/bin/testmachinepack-mocha.js"
+  },
+  "keywords": [
+    "Fred",
+    "machines",
+    "machinepack"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "machine": "^3.0.0",
+    "lodash": "^3.2.0",
+    "machinepack-http": "^2.0.1"
+  },
+  "devDependencies": {
+    "test-machinepack-mocha": "^0.2.2"
+  },
+  "machinepack": {
+    "friendlyName": "Fred",
+    "machineDir": "machines/",
+    "machines": [
+      "get-series-observations"
+    ]
+  }
+}
